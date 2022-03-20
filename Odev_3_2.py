@@ -179,17 +179,14 @@ def plot_vehicle(p1,p2,p3):
     plt.plot([p2[0], p3[0]], [p2[1], p3[1]], color='green', marker='.', linestyle='-')
     plt.plot([p3[0], p1[0]], [p3[1], p1[1]], color='green', marker='.', linestyle='-')
 
-# Global definements
-x_start=-15
-y_start=0
-theta_start=0
-dt=0.1
-x_rec, y_rec = [], []
-x1, y1 = [],[]
-d=1
-v_error_r_sum , v_error_l_sum =0,0
+if __name__=='__main__':
+    x_start=-15
+    y_start=0
+    theta_start=0
+    dt=0.1
+    x_rec, y_rec = [], []
+    x1, y1 = [],[]
+    d=1
+    v_error_r_sum , v_error_l_sum =0,0
 
-
-
-movement(x_start,y_start,theta_start,dt,x_rec,y_rec,x1,y1,v_error_r_sum ,v_error_l_sum )
-
+    movement(x_start,y_start,theta_start,dt,x_rec,y_rec,x1,y1,v_error_r_sum ,v_error_l_sum )
